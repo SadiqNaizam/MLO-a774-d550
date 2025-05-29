@@ -61,13 +61,19 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+        // PRD specific accent colors not directly part of Shadcn's typical set
+        'accent-green': '#27AE60',
+        'accent-yellow': '#F2C94C',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
 			},
+      fontFamily: {
+        sans: ['var(--font-sans)', 'sans-serif'],
+      },
 			keyframes: {
 				'accordion-down': {
 					from: {
